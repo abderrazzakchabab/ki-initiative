@@ -1,0 +1,712 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Simple Website with Menu Bar</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+        }
+        .menu-bar {
+            background-color: #333;
+            overflow: hidden;
+        }
+        .menu-bar a {
+            float: left;
+            color: white;
+            text-align: center;
+            padding: 14px 16px;
+            text-decoration: none;
+        }
+        .menu-bar a:hover {
+            background-color: CornflowerBlue;
+            color: CornflowerBlue;
+        }
+        .content {
+            padding: 20px;
+        }
+    </style>
+</head>
+<body>
+    <div class="menu-bar">
+        <a href="#home">Home</a>
+        <a href="/labs">Labs</a>
+        <a href="/Slides">Slides</a>
+        
+    </div>
+<h1 style="margin-left:0px;">&nbsp;</h1>
+<h1 style="margin-left:600px;font-family:'Font Awesome 6 Brands';font-size:30px">Elastic DevOps Kurs&nbsp;</h1>
+<h1 style="margin-left:0px;">Generelle Info zu den Kursen</h1>
+<p style="margin-left:0px;">Die Kursen finden alle vor Ort am Eichenweg 3 im Sitzungszimmer 1.316 statt.&nbsp;<br>In den Kursen werden auch Übungen durchgeführt. Damit die Übungen gemacht werden können muss jeder Teilnehmer sein <strong>privates Notebook</strong> dabei haben.<br>Diese Dokument ist schreibgeschützt und kann nur durch: <a target="_blank" rel="noopener noreferrer" href="https://team.isc-ejpd.admin.ch/confluence/display/~isc-ssl">Sahlender Stefan ISC-EJPD</a> und <a target="_blank" rel="noopener noreferrer" href="https://team.isc-ejpd.admin.ch/confluence/display/~isc-fua">Fuhrer Alain ISC-EJPD</a> bearbeitet werden</p>
+<h1 style="margin-left:0px;">Schulungspaket DevOps (2x2 Tage)&nbsp;</h1>
+<p style="margin-left:0px;">Die DevOps Schulung ist die welche am tiefsten in die Thematik Elasticsearch eintaucht und Wissen vermittelt welches zum Betrieb einer Elastic Infrastruktur benötigt wird. Dieser Kurs ist grundsätzlich für Mitarbeiter aus B&amp;S vorgesehen welche sich Intensiv mit&nbsp;<br>dem Betrieb von Elastic Search Infrastrukturen beschäftigen. Damit dieser Kurs den vollen Mehrwert entfalten kann, wird ein gewisses Basiswissen über Elasticsearch vorausgesetzt.&nbsp;</p>
+<h2 style="margin-left:0px;">Kurs Inhalt</h2>
+<p style="margin-left:0px;">Detaillierte Schulung zu den Themen</p>
+<ul style="list-style-type:disc;">
+    <li>
+        <p style="margin-left:0px;">Elastic Search</p>
+    </li>
+    <li>
+        <p style="margin-left:0px;">Kibana (Fokus liegt auf Deployment und Betrieb von Kibana)&nbsp;</p>
+    </li>
+    <li>
+        <p style="margin-left:0px;">Stack Features</p>
+    </li>
+    <li>
+        <p style="margin-left:0px;">Logstash</p>
+    </li>
+    <li>
+        <p style="margin-left:0px;">Beats / Agent / Fleet</p>
+    </li>
+</ul>
+<h3 style="margin-left:0px;"><strong>Kursdaten&nbsp;</strong></h3>
+<p style="margin-left:0px;">Teil 1 03.09.2024 - 04.09.2024&nbsp;</p>
+<p style="margin-left:0px;">Teil 2 10.09.2024 - 11.09.2024&nbsp;</p>
+<p style="margin-left:0px;">Kurszeiten:</p>
+<p style="margin-left:0px;">09:00 - 12:30</p>
+<p style="margin-left:0px;">13:30 - 16:00</p>
+<figure class="table" style="float:left;width:61.41%;">
+    <table class="ck-table-resized" style="border-style:solid;">
+        <colgroup>
+            <col style="width:8.81%;">
+            <col style="width:33.89%;">
+            <col style="width:15.4%;">
+            <col style="width:18.62%;">
+            <col style="width:23.28%;">
+        </colgroup>
+        <thead>
+            <tr>
+                <th style="background-color:rgb(244, 245, 247);border:1px solid rgb(193, 199, 208);padding:0px;vertical-align:top;">
+                    <p style="margin-left:0px;"><strong>Nummer</strong></p>
+                </th>
+                <th style="background-color:rgb(244, 245, 247);border:1px solid rgb(193, 199, 208);padding:0px;vertical-align:top;">
+                    <p style="margin-left:0px;"><strong>Teilnehmer</strong></p>
+                </th>
+                <th style="background-color:rgb(244, 245, 247);border:1px solid rgb(193, 199, 208);padding:0px;vertical-align:top;">
+                    <p style="margin-left:0px;"><strong>VM / User</strong></p>
+                </th>
+                <th style="background-color:rgb(244, 245, 247);border:1px solid rgb(244, 245, 247);">SSH</th>
+                <th style="background-color:rgb(244, 245, 247);border:1px solid rgb(244, 245, 247);">Kibana</th>
+            </tr>
+        </thead>
+        <tbody>
+            <tr>
+                <td style="border:1px solid rgb(193, 199, 208);padding:7px 10px;vertical-align:top;">
+                    <p style="margin-left:0px;">1</p>
+                </td>
+                <td style="border:1px solid rgb(193, 199, 208);padding:7px 10px;vertical-align:top;">
+                    <p style="margin-left:0px;"><a target="_blank" rel="noopener noreferrer" href="https://team.isc-ejpd.admin.ch/confluence/display/~isc-mlm">Müller Marcel ISC-EJPD</a>&nbsp;</p>
+                </td>
+                <td style="border:1px solid rgb(193, 199, 208);padding:7px 10px;vertical-align:top;">
+                    <p style="margin-left:0px;">vm01 / kurs01</p>
+                </td>
+                <td style="border:1px solid rgb(193, 199, 208);"><a target="_blank" rel="noopener noreferrer" href="https://ssh01.abchmast.org">ssh01.abchmast.org</a></td>
+                <td><a target="_blank" rel="noopener noreferrer" href="https://kibana01.abchmast.org">kibana01.abchmast.org</a></td>
+            </tr>
+            <tr>
+                <td style="border:1px solid rgb(193, 199, 208);padding:7px 10px;vertical-align:top;">
+                    <p style="margin-left:0px;">2</p>
+                </td>
+                <td style="border:1px solid rgb(193, 199, 208);padding:7px 10px;vertical-align:top;">
+                    <p style="margin-left:0px;"><a target="_blank" rel="noopener noreferrer" href="https://team.isc-ejpd.admin.ch/confluence/display/~isc-cha">Chabab Abderrazzak ISC-EJPD</a>&nbsp;</p>
+                </td>
+                <td style="border:1px solid rgb(193, 199, 208);padding:7px 10px;vertical-align:top;">
+                    <p style="margin-left:0px;">vm02 / kurs02</p>
+                </td>
+                <td style="border:1px solid rgb(193, 199, 208);"><a target="_blank" rel="noopener noreferrer" href="https://ssh02.abchmast.org">ssh02.abchmast.org</a></td>
+                <td><a target="_blank" rel="noopener noreferrer" href="https://kibana02.abchmast.org">kibana02.abchmast.org</a></td>
+            </tr>
+            <tr>
+                <td style="border:1px solid rgb(193, 199, 208);padding:7px 10px;vertical-align:top;">
+                    <p style="margin-left:0px;">3</p>
+                </td>
+                <td style="border:1px solid rgb(193, 199, 208);padding:7px 10px;vertical-align:top;">
+                    <p style="margin-left:0px;"><a target="_blank" rel="noopener noreferrer" href="https://team.isc-ejpd.admin.ch/confluence/display/~isc-ssl">Sahlender Stefan ISC-EJPD</a>&nbsp;</p>
+                </td>
+                <td style="border:1px solid rgb(193, 199, 208);padding:7px 10px;vertical-align:top;">
+                    <p style="margin-left:0px;">vm03 / kurs03</p>
+                </td>
+                <td style="border:1px solid rgb(193, 199, 208);"><a target="_blank" rel="noopener noreferrer" href="https://ssh04.abchmast.org">ssh03.abchmast.org</a></td>
+                <td><a target="_blank" rel="noopener noreferrer" href="https://kibana03.abchmast.org">kibana03.abchmast.org</a></td>
+            </tr>
+            <tr>
+                <td style="border:1px solid rgb(193, 199, 208);padding:7px 10px;vertical-align:top;">
+                    <p style="margin-left:0px;">4</p>
+                </td>
+                <td style="border:1px solid rgb(193, 199, 208);padding:7px 10px;vertical-align:top;">
+                    <p style="margin-left:0px;"><a target="_blank" rel="noopener noreferrer" href="https://team.isc-ejpd.admin.ch/confluence/display/~isc-ioc">Ioiart Christian ISC-EJPD</a>&nbsp;</p>
+                </td>
+                <td style="border:1px solid rgb(193, 199, 208);padding:7px 10px;vertical-align:top;">
+                    <p style="margin-left:0px;">vm04 / kurs04</p>
+                </td>
+                <td style="border:1px solid rgb(193, 199, 208);"><a target="_blank" rel="noopener noreferrer" href="https://ssh04.abchmast.org">ssh04.abchmast.org</a></td>
+                <td><a target="_blank" rel="noopener noreferrer" href="https://kibana04.abchmast.org">kibana04.abchmast.org</a></td>
+            </tr>
+            <tr>
+                <td style="border:1px solid rgb(193, 199, 208);padding:7px 10px;vertical-align:top;">
+                    <p style="margin-left:0px;">5</p>
+                </td>
+                <td style="border:1px solid rgb(193, 199, 208);padding:7px 10px;vertical-align:top;">
+                    <p style="margin-left:0px;"><a target="_blank" rel="noopener noreferrer" href="https://team.isc-ejpd.admin.ch/confluence/display/~isc-hai">Hagi Ivan ISC-EJPD</a>&nbsp;</p>
+                </td>
+                <td style="border:1px solid rgb(193, 199, 208);padding:7px 10px;vertical-align:top;">
+                    <p style="margin-left:0px;">vm05 / kurs05</p>
+                </td>
+                <td style="border:1px solid rgb(193, 199, 208);"><a target="_blank" rel="noopener noreferrer" href="https://ssh05.abchmast.org">ssh05.abchmast.org</a></td>
+                <td><a target="_blank" rel="noopener noreferrer" href="https://kibana05.abchmast.org">kibana05.abchmast.org</a></td>
+            </tr>
+            <tr>
+                <td style="border:1px solid rgb(193, 199, 208);padding:7px 10px;vertical-align:top;">
+                    <p style="margin-left:0px;">6</p>
+                </td>
+                <td style="border:1px solid rgb(193, 199, 208);padding:7px 10px;vertical-align:top;">
+                    <p style="margin-left:0px;"><a target="_blank" rel="noopener noreferrer" href="https://team.isc-ejpd.admin.ch/confluence/display/~isc-msc">Scheidegger Michael ISC-EJPD</a>&nbsp;</p>
+                </td>
+                <td style="border:1px solid rgb(193, 199, 208);padding:7px 10px;vertical-align:top;">
+                    <p style="margin-left:0px;">vm06 / kurs06</p>
+                </td>
+                <td style="border:1px solid rgb(193, 199, 208);"><a target="_blank" rel="noopener noreferrer" href="https://ssh06.abchmast.org">ssh06.abchmast.org</a></td>
+                <td><a target="_blank" rel="noopener noreferrer" href="https://kibana06.abchmast.org">kibana06.abchmast.org</a></td>
+            </tr>
+            <tr>
+                <td style="border:1px solid rgb(193, 199, 208);padding:7px 10px;vertical-align:top;">7</td>
+                <td style="border:1px solid rgb(193, 199, 208);padding:7px 10px;vertical-align:top;"><a target="_blank" rel="noopener noreferrer" href="https://team.isc-ejpd.admin.ch/confluence/display/~isc-wis">Wälchli Simon ISC-EJPD</a>&nbsp;</td>
+                <td style="border:1px solid rgb(193, 199, 208);padding:7px 10px;vertical-align:top;">vm07 / kurs07</td>
+                <td style="border:1px solid rgb(193, 199, 208);"><a target="_blank" rel="noopener noreferrer" href="https://ssh07.abchmast.org">ssh07.abchmast.org</a></td>
+                <td><a target="_blank" rel="noopener noreferrer" href="https://kibana07.abchmast.org">kibana07.abchmast.org</a></td>
+            </tr>
+            <tr>
+                <td style="border:1px solid rgb(193, 199, 208);padding:7px 10px;vertical-align:top;">8</td>
+                <td style="border:1px solid rgb(193, 199, 208);padding:7px 10px;vertical-align:top;">
+                    <p style="margin-left:0px;"><a target="_blank" rel="noopener noreferrer" href="https://team.isc-ejpd.admin.ch/confluence/display/~isc-kes">Kesseli Pablo ISC-EJPD</a> (nur unterlagen)</p>
+                </td>
+                <td style="border:1px solid rgb(193, 199, 208);padding:7px 10px;vertical-align:top;">vm08 / kurs08</td>
+                <td style="border:1px solid rgb(193, 199, 208);"><a target="_blank" rel="noopener noreferrer" href="https://ssh08.abchmast.org">ssh08.abchmast.org</a></td>
+                <td><a target="_blank" rel="noopener noreferrer" href="https://kibana08.abchmast.org">kibana08.abchmast.org</a></td>
+            </tr>
+            <tr>
+                <td style="border:1px solid rgb(193, 199, 208);padding:7px 10px;vertical-align:top;">&nbsp;</td>
+                <td style="border:1px solid rgb(193, 199, 208);padding:7px 10px;vertical-align:top;">
+                    <p style="margin-left:0px;"><a target="_blank" rel="noopener noreferrer" href="https://team.isc-ejpd.admin.ch/confluence/display/~isc-wen">Wenger Andreas ISC</a> (Trainer)</p>
+                </td>
+                <td style="border:1px solid rgb(193, 199, 208);padding:7px 10px;vertical-align:top;">vm12 / kurs12</td>
+                <td style="border:1px solid rgb(193, 199, 208);"><a target="_blank" rel="noopener noreferrer" href="https://ssh12.abchmast.org">ssh12.abchmast.org</a></td>
+                <td><a target="_blank" rel="noopener noreferrer" href="https://kibana12.abchmast.org">kibana12.abchmast.org</a></td>
+            </tr>
+        </tbody>
+    </table>
+</figure>
+<p>&nbsp;</p>
+<p>&nbsp;</p>
+<p>&nbsp;</p>
+<p>&nbsp;</p>
+<p>&nbsp;</p>
+<p>&nbsp;</p>
+<p>&nbsp;</p>
+<p>&nbsp;</p>
+<p>&nbsp;</p>
+<p>&nbsp;</p>
+<p>&nbsp;</p>
+<p>&nbsp;</p>
+<p>&nbsp;</p>
+<p>&nbsp;</p>
+<p>&nbsp;</p>
+<p>&nbsp;</p>
+<p>&nbsp;</p>
+<p>&nbsp;</p>
+<p style="margin-left:0px;">&nbsp;</p>
+<p style="margin-left:0px;">&nbsp;</p>
+<p style="margin-left:0px;">&nbsp;</p>
+<p style="margin-left:0px;">&nbsp;</p>
+<p style="margin-left:0px;">&nbsp;</p>
+<h1 style="margin-left:0px;">Schulungspaket für Architekten (1 Tag)</h1>
+<p style="margin-left:0px;">Dieses Schulungspaket wurde so aufgebaut, dass in einem Tag eine gute Übersicht über die Produkte von Elasticsearch gegeben wird. Es wird auch eingegangen darauf wie der Elasticsearch Service des ISC aufgebaut ist und wie er am Besten in Anwendungen implementiert wird.&nbsp;<br>Dieser Kurs ist für Architekten gedacht, damit diese in Zukunft in Projekten ein gutes Vorwissen haben wie Elasticsearch am Besten in Anwendungen integriert werden kann.&nbsp;</p>
+<h2 style="margin-left:0px;">Kurs Inhalt</h2>
+<p style="margin-left:0px;">Schulung zu den Themen</p>
+<ul style="list-style-type:disc;">
+    <li>
+        <p style="margin-left:0px;">Elastic Stack</p>
+    </li>
+    <li>
+        <p style="margin-left:0px;">Elastic Cloud Enterprise&nbsp;</p>
+    </li>
+    <li>
+        <p style="margin-left:0px;">Elastic Cloud Services</p>
+    </li>
+    <li>
+        <p style="margin-left:0px;">Elastic Cloud Kubernetes</p>
+    </li>
+    <li>
+        <p style="margin-left:0px;">Funktionsübersicht Elastic Stack und ESS Service im ISC</p>
+    </li>
+</ul>
+<h3 style="margin-left:0px;"><strong>Kursdatum 16.09.2024&nbsp;</strong></h3>
+<p style="margin-left:0px;">Kurszeiten:</p>
+<p style="margin-left:0px;">09:00 - 12:30</p>
+<p style="margin-left:0px;">13:30 - 16:00</p>
+<figure class="table" style="float:left;width:47.96%;">
+    <table class="ck-table-resized">
+        <colgroup>
+            <col style="width:14.32%;">
+            <col style="width:52.84%;">
+            <col style="width:32.84%;">
+        </colgroup>
+        <thead>
+            <tr>
+                <th style="background-color:rgb(244, 245, 247);border:1px solid rgb(193, 199, 208);padding:0px;vertical-align:top;">
+                    <p style="margin-left:0px;"><strong>Nummer</strong></p>
+                </th>
+                <th style="background-color:rgb(244, 245, 247);border:1px solid rgb(193, 199, 208);padding:0px;vertical-align:top;">
+                    <p style="margin-left:0px;"><strong>Teilnehmer</strong></p>
+                </th>
+                <th style="background-color:rgb(244, 245, 247);border:1px solid rgb(193, 199, 208);padding:0px;vertical-align:top;">
+                    <p style="margin-left:0px;"><strong>VM / User</strong></p>
+                </th>
+            </tr>
+        </thead>
+        <tbody>
+            <tr>
+                <td style="border:1px solid rgb(193, 199, 208);padding:7px 10px;vertical-align:top;">
+                    <p style="margin-left:0px;">1</p>
+                </td>
+                <td style="border:1px solid rgb(193, 199, 208);padding:7px 10px;vertical-align:top;">
+                    <p style="margin-left:0px;"><a target="_blank" rel="noopener noreferrer" href="https://team.isc-ejpd.admin.ch/confluence/display/~isc-gbr">Gabor Marius ISC-EJPD</a>&nbsp;</p>
+                </td>
+                <td style="border:1px solid rgb(193, 199, 208);padding:7px 10px;vertical-align:top;">
+                    <p style="margin-left:0px;">vm01 / kurs01</p>
+                </td>
+            </tr>
+            <tr>
+                <td style="border:1px solid rgb(193, 199, 208);padding:7px 10px;vertical-align:top;">2</td>
+                <td style="border:1px solid rgb(193, 199, 208);padding:7px 10px;vertical-align:top;"><a target="_blank" rel="noopener noreferrer" href="https://team.isc-ejpd.admin.ch/confluence/display/~isc-hoa">Hofstetter André ISC-EJPD</a>&nbsp;</td>
+                <td style="border:1px solid rgb(193, 199, 208);padding:7px 10px;vertical-align:top;">vm02 / kurs02</td>
+            </tr>
+            <tr>
+                <td style="border:1px solid rgb(193, 199, 208);padding:7px 10px;vertical-align:top;">
+                    <p style="margin-left:0px;">3</p>
+                </td>
+                <td style="border:1px solid rgb(193, 199, 208);padding:7px 10px;vertical-align:top;">
+                    <p style="margin-left:0px;"><a target="_blank" rel="noopener noreferrer" href="https://team.isc-ejpd.admin.ch/confluence/display/~isc-sap">Sandmeier Patrick ISC-EJPD</a>&nbsp;</p>
+                </td>
+                <td style="border:1px solid rgb(193, 199, 208);padding:7px 10px;vertical-align:top;">
+                    <p style="margin-left:0px;">vm03 / kurs03</p>
+                </td>
+            </tr>
+            <tr>
+                <td style="border:1px solid rgb(193, 199, 208);padding:7px 10px;vertical-align:top;">
+                    <p style="margin-left:0px;">4</p>
+                </td>
+                <td style="border:1px solid rgb(193, 199, 208);padding:7px 10px;vertical-align:top;">
+                    <p style="margin-left:0px;"><a target="_blank" rel="noopener noreferrer" href="https://team.isc-ejpd.admin.ch/confluence/display/~isc-hai">Hagi Ivan ISC-EJPD</a>&nbsp;</p>
+                </td>
+                <td style="border:1px solid rgb(193, 199, 208);padding:7px 10px;vertical-align:top;">
+                    <p style="margin-left:0px;">vm04 / kurs04</p>
+                </td>
+            </tr>
+            <tr>
+                <td style="border:1px solid rgb(193, 199, 208);padding:7px 10px;vertical-align:top;">
+                    <p style="margin-left:0px;">5</p>
+                </td>
+                <td style="border:1px solid rgb(193, 199, 208);padding:7px 10px;vertical-align:top;">
+                    <p style="margin-left:0px;"><a target="_blank" rel="noopener noreferrer" href="https://team.isc-ejpd.admin.ch/confluence/display/~isc-arv">Vedrine Arnaud ISC-EJPD</a>&nbsp;</p>
+                </td>
+                <td style="border:1px solid rgb(193, 199, 208);padding:7px 10px;vertical-align:top;">
+                    <p style="margin-left:0px;">vm05 / kurs05</p>
+                </td>
+            </tr>
+            <tr>
+                <td style="border:1px solid rgb(193, 199, 208);padding:7px 10px;vertical-align:top;">
+                    <p style="margin-left:0px;">6</p>
+                </td>
+                <td style="border:1px solid rgb(193, 199, 208);padding:7px 10px;vertical-align:top;">
+                    <p style="margin-left:0px;"><a target="_blank" rel="noopener noreferrer" href="https://team.isc-ejpd.admin.ch/confluence/display/~isc-frf">Frühwirth Franz ISC-EJPD</a>&nbsp;</p>
+                </td>
+                <td style="border:1px solid rgb(193, 199, 208);padding:7px 10px;vertical-align:top;">
+                    <p style="margin-left:0px;">vm06 / kurs06</p>
+                </td>
+            </tr>
+            <tr>
+                <td style="border:1px solid rgb(193, 199, 208);padding:7px 10px;vertical-align:top;">
+                    <p style="margin-left:0px;">7</p>
+                </td>
+                <td style="border:1px solid rgb(193, 199, 208);padding:7px 10px;vertical-align:top;">
+                    <p style="margin-left:0px;"><a target="_blank" rel="noopener noreferrer" href="https://team.isc-ejpd.admin.ch/confluence/display/~isc-ssa">Sommer Sacha ISC-EJPD</a>&nbsp;</p>
+                </td>
+                <td style="border:1px solid rgb(193, 199, 208);padding:7px 10px;vertical-align:top;">
+                    <p style="margin-left:0px;">vm07 / kurs07</p>
+                </td>
+            </tr>
+            <tr>
+                <td style="border:1px solid rgb(193, 199, 208);padding:7px 10px;vertical-align:top;">
+                    <p style="margin-left:0px;">8</p>
+                </td>
+                <td style="border:1px solid rgb(193, 199, 208);padding:7px 10px;vertical-align:top;">
+                    <p style="margin-left:0px;"><a target="_blank" rel="noopener noreferrer" href="https://team.isc-ejpd.admin.ch/confluence/display/~isc-hun">Hutmacher Niklaus ISC-EJPD</a> (Nur Unterlagen, kein Kurs wegen Ferien)</p>
+                </td>
+                <td style="border:1px solid rgb(193, 199, 208);padding:7px 10px;vertical-align:top;">
+                    <p style="margin-left:0px;">vm08 /&nbsp; kurs08</p>
+                </td>
+            </tr>
+            <tr>
+                <td style="border:1px solid rgb(193, 199, 208);padding:7px 10px;vertical-align:top;">
+                    <p style="margin-left:0px;">&nbsp;</p>
+                </td>
+                <td style="border:1px solid rgb(193, 199, 208);padding:7px 10px;vertical-align:top;">
+                    <p style="margin-left:0px;"><a target="_blank" rel="noopener noreferrer" href="https://team.isc-ejpd.admin.ch/confluence/display/~isc-wen">Wenger Andreas ISC</a> (Trainer)</p>
+                </td>
+                <td style="border:1px solid rgb(193, 199, 208);padding:7px 10px;vertical-align:top;">
+                    <p style="margin-left:0px;">vm12 / kurs12</p>
+                </td>
+            </tr>
+        </tbody>
+    </table>
+</figure>
+<p>&nbsp;</p>
+<p>&nbsp;</p>
+<p>&nbsp;</p>
+<p>&nbsp;</p>
+<p>&nbsp;</p>
+<p>&nbsp;</p>
+<p>&nbsp;</p>
+<p>&nbsp;</p>
+<p>&nbsp;</p>
+<p>&nbsp;</p>
+<p>&nbsp;</p>
+<p>&nbsp;</p>
+<p>&nbsp;</p>
+<p>&nbsp;</p>
+<p>&nbsp;</p>
+<h1 style="margin-left:0px;">Schulungspaket für Entwickler und Anwender (3 Tage)</h1>
+<p style="margin-left:0px;">Diese Schulungspaket ist so aufgebaut, dass den Entwicklern und Anwendern eine gute Grundlage für den Umgang mit Elasticsearch und Kibana vermittelt wird. Es wird darauf eingegangen was der Elastic Stack bietet und wie damit gearbeitet wird.&nbsp;<br>Der Fokus dieser Schulung liegt ausserdem auf dem Umgang mit Kibana. die Teilnehmer erfahren detailliert wie Kibana funktioniert, wie Index und Dashboards gebaut aufgebaut werden usw.&nbsp;</p>
+<h2 style="margin-left:0px;">Kurs Inhalt</h2>
+<p style="margin-left:0px;">Detaillierte Schulung zu den Themen</p>
+<ul style="list-style-type:disc;">
+    <li>
+        <p style="margin-left:0px;">Übersicht Elastic und Cloud Dienste&nbsp;</p>
+    </li>
+    <li>
+        <p style="margin-left:0px;">Elastic Search</p>
+    </li>
+    <li>
+        <p style="margin-left:0px;">Kibana</p>
+    </li>
+    <li>
+        <p style="margin-left:0px;">Stack Features (Reporting, Graph, Machine Learning, Canvas)&nbsp;</p>
+    </li>
+</ul>
+<h3 style="margin-left:0px;"><strong>Kursdatum Kurs 1&nbsp;01.10.2024-03.10.2024 &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;&nbsp;</strong></h3>
+<p style="margin-left:0px;">Kurszeiten:</p>
+<p style="margin-left:0px;">09:00 - 12:30</p>
+<p style="margin-left:0px;">13:30 - 16:00</p>
+<figure class="table" style="float:left;width:53.37%;">
+    <table class="ck-table-resized">
+        <colgroup>
+            <col style="width:15.74%;">
+            <col style="width:41.01%;">
+            <col style="width:43.25%;">
+        </colgroup>
+        <thead>
+            <tr>
+                <th style="background-color:rgb(244, 245, 247);border:1px solid rgb(193, 199, 208);padding:0px;vertical-align:top;">
+                    <p style="margin-left:0px;"><strong>Nummer</strong></p>
+                </th>
+                <th style="background-color:rgb(244, 245, 247);border:1px solid rgb(193, 199, 208);padding:0px;vertical-align:top;">
+                    <p style="margin-left:0px;"><strong>Teilnehmer</strong></p>
+                </th>
+                <th style="background-color:rgb(244, 245, 247);border:1px solid rgb(193, 199, 208);padding:0px;vertical-align:top;">
+                    <p style="margin-left:0px;"><strong>VM / User</strong></p>
+                </th>
+            </tr>
+        </thead>
+        <tbody>
+            <tr>
+                <td style="border:1px solid rgb(193, 199, 208);padding:7px 10px;vertical-align:top;">
+                    <p style="margin-left:0px;">1</p>
+                </td>
+                <td style="border:1px solid rgb(193, 199, 208);padding:7px 10px;vertical-align:top;">
+                    <p style="margin-left:0px;"><a target="_blank" rel="noopener noreferrer" href="https://team.isc-ejpd.admin.ch/confluence/display/~isc-mju">Mauritz Julia ISC-EJPD</a>&nbsp;</p>
+                </td>
+                <td style="border:1px solid rgb(193, 199, 208);padding:7px 10px;vertical-align:top;">
+                    <p style="margin-left:0px;">vm01 / kurs01</p>
+                </td>
+            </tr>
+            <tr>
+                <td style="border:1px solid rgb(193, 199, 208);padding:7px 10px;vertical-align:top;">2</td>
+                <td style="border:1px solid rgb(193, 199, 208);padding:7px 10px;vertical-align:top;"><a target="_blank" rel="noopener noreferrer" href="https://team.isc-ejpd.admin.ch/confluence/display/~isc-shd">Schaad Simon ISC-EJPD</a>&nbsp;</td>
+                <td style="border:1px solid rgb(193, 199, 208);padding:7px 10px;vertical-align:top;">vm02 / kurs02</td>
+            </tr>
+            <tr>
+                <td style="border:1px solid rgb(193, 199, 208);padding:7px 10px;vertical-align:top;">
+                    <p style="margin-left:0px;">3</p>
+                </td>
+                <td style="border:1px solid rgb(193, 199, 208);padding:7px 10px;vertical-align:top;">
+                    <p style="margin-left:0px;"><a target="_blank" rel="noopener noreferrer" href="https://team.isc-ejpd.admin.ch/confluence/display/~isc-fp">Feuz Peter ISC-EJPD</a>&nbsp;</p>
+                </td>
+                <td style="border:1px solid rgb(193, 199, 208);padding:7px 10px;vertical-align:top;">
+                    <p style="margin-left:0px;">vm03 / kurs03</p>
+                </td>
+            </tr>
+            <tr>
+                <td style="border:1px solid rgb(193, 199, 208);padding:7px 10px;vertical-align:top;">
+                    <p style="margin-left:0px;">4</p>
+                </td>
+                <td style="border:1px solid rgb(193, 199, 208);padding:7px 10px;vertical-align:top;">
+                    <p style="margin-left:0px;"><a target="_blank" rel="noopener noreferrer" href="https://team.isc-ejpd.admin.ch/confluence/display/~isc-nic">Niggemeyer Christian ISC-EJPD</a>&nbsp;</p>
+                </td>
+                <td style="border:1px solid rgb(193, 199, 208);padding:7px 10px;vertical-align:top;">
+                    <p style="margin-left:0px;">vm04 / kurs04</p>
+                </td>
+            </tr>
+            <tr>
+                <td style="border:1px solid rgb(193, 199, 208);padding:7px 10px;vertical-align:top;">
+                    <p style="margin-left:0px;">5</p>
+                </td>
+                <td style="border:1px solid rgb(193, 199, 208);padding:7px 10px;vertical-align:top;">
+                    <p style="margin-left:0px;"><a target="_blank" rel="noopener noreferrer" href="https://team.isc-ejpd.admin.ch/confluence/display/~isc-bmc">Barth Marc ISC-EJPD</a>&nbsp;</p>
+                </td>
+                <td style="border:1px solid rgb(193, 199, 208);padding:7px 10px;vertical-align:top;">
+                    <p style="margin-left:0px;">vm05 / kurs05</p>
+                </td>
+            </tr>
+            <tr>
+                <td style="border:1px solid rgb(193, 199, 208);padding:7px 10px;vertical-align:top;">
+                    <p style="margin-left:0px;">6</p>
+                </td>
+                <td style="border:1px solid rgb(193, 199, 208);padding:7px 10px;vertical-align:top;">
+                    <p style="margin-left:0px;"><a target="_blank" rel="noopener noreferrer" href="https://team.isc-ejpd.admin.ch/confluence/display/~isc-ayv">Ammann Yves ISC-EJPD</a>&nbsp;</p>
+                </td>
+                <td style="border:1px solid rgb(193, 199, 208);padding:7px 10px;vertical-align:top;">
+                    <p style="margin-left:0px;">vm06 / kurs06</p>
+                </td>
+            </tr>
+            <tr>
+                <td style="border:1px solid rgb(193, 199, 208);padding:7px 10px;vertical-align:top;">
+                    <p style="margin-left:0px;">7</p>
+                </td>
+                <td style="border:1px solid rgb(193, 199, 208);padding:7px 10px;vertical-align:top;">
+                    <p style="margin-left:0px;"><a target="_blank" rel="noopener noreferrer" href="https://team.isc-ejpd.admin.ch/confluence/display/~isc-arv">Vedrine Arnaud ISC-EJPD</a>&nbsp;</p>
+                </td>
+                <td style="border:1px solid rgb(193, 199, 208);padding:7px 10px;vertical-align:top;">
+                    <p style="margin-left:0px;">vm07 / kurs07</p>
+                </td>
+            </tr>
+            <tr>
+                <td style="border:1px solid rgb(193, 199, 208);padding:7px 10px;vertical-align:top;">
+                    <p style="margin-left:0px;">8</p>
+                </td>
+                <td style="border:1px solid rgb(193, 199, 208);padding:7px 10px;vertical-align:top;">
+                    <p style="margin-left:0px;"><a target="_blank" rel="noopener noreferrer" href="https://team.isc-ejpd.admin.ch/confluence/display/~isc-sap">Sandmeier Patrick ISC-EJPD</a>&nbsp;</p>
+                </td>
+                <td style="border:1px solid rgb(193, 199, 208);padding:7px 10px;vertical-align:top;">
+                    <p style="margin-left:0px;">vm08 / kurs08</p>
+                </td>
+            </tr>
+            <tr>
+                <td style="border:1px solid rgb(193, 199, 208);padding:7px 10px;vertical-align:top;">
+                    <p style="margin-left:0px;">9</p>
+                </td>
+                <td style="border:1px solid rgb(193, 199, 208);padding:7px 10px;vertical-align:top;">
+                    <p style="margin-left:0px;"><a target="_blank" rel="noopener noreferrer" href="https://team.isc-ejpd.admin.ch/confluence/display/~isc-bua">Bürki Adrian ISC-EJPD</a>&nbsp;</p>
+                </td>
+                <td style="border:1px solid rgb(193, 199, 208);padding:7px 10px;vertical-align:top;">
+                    <p style="margin-left:0px;">vm09 / kurs09</p>
+                </td>
+            </tr>
+            <tr>
+                <td style="border:1px solid rgb(193, 199, 208);padding:7px 10px;vertical-align:top;">
+                    <p style="margin-left:0px;">&nbsp;</p>
+                </td>
+                <td style="border:1px solid rgb(193, 199, 208);padding:7px 10px;vertical-align:top;">
+                    <p style="margin-left:0px;"><a target="_blank" rel="noopener noreferrer" href="https://team.isc-ejpd.admin.ch/confluence/display/~isc-wen">Wenger Andreas ISC</a> (Trainer)</p>
+                </td>
+                <td style="border:1px solid rgb(193, 199, 208);padding:7px 10px;vertical-align:top;">
+                    <p style="margin-left:0px;">vm12 / kurs12</p>
+                </td>
+            </tr>
+        </tbody>
+    </table>
+</figure>
+<p>&nbsp;</p>
+<p>&nbsp;</p>
+<p>&nbsp;</p>
+<p>&nbsp;</p>
+<p>&nbsp;</p>
+<p>&nbsp;</p>
+<p>&nbsp;</p>
+<p>&nbsp;</p>
+<p>&nbsp;</p>
+<p>&nbsp;</p>
+<p>&nbsp;</p>
+<p>&nbsp;</p>
+<p>&nbsp;</p>
+<p>&nbsp;</p>
+<p>&nbsp;</p>
+<p style="margin-left:0px;">&nbsp;</p>
+<h3 style="margin-left:0px;"><strong>Kurs 2 16.10.2024-18.10.2024 &nbsp;</strong></h3>
+<p style="margin-left:0px;">Kurszeiten:</p>
+<p style="margin-left:0px;">09:00 - 12:30</p>
+<p style="margin-left:0px;">13:30 - 16:00</p>
+<figure class="table" style="float:left;width:56.3%;">
+    <table class="ck-table-resized">
+        <colgroup>
+            <col style="width:16.7%;">
+            <col style="width:43.62%;">
+            <col style="width:39.68%;">
+        </colgroup>
+        <thead>
+            <tr>
+                <th style="background-color:rgb(244, 245, 247);border:1px solid rgb(193, 199, 208);padding:0px;vertical-align:top;">
+                    <p style="margin-left:0px;"><strong>Nummer</strong></p>
+                </th>
+                <th style="background-color:rgb(244, 245, 247);border:1px solid rgb(193, 199, 208);padding:0px;vertical-align:top;">
+                    <p style="margin-left:0px;"><strong>Teilnehmer</strong></p>
+                </th>
+                <th style="background-color:rgb(244, 245, 247);border:1px solid rgb(193, 199, 208);padding:0px;vertical-align:top;">
+                    <p style="margin-left:0px;"><strong>VM / User</strong></p>
+                </th>
+            </tr>
+        </thead>
+        <tbody>
+            <tr>
+                <td style="border:1px solid rgb(193, 199, 208);padding:7px 10px;vertical-align:top;">
+                    <p style="margin-left:0px;">1</p>
+                </td>
+                <td style="border:1px solid rgb(193, 199, 208);padding:7px 10px;vertical-align:top;">
+                    <p style="margin-left:0px;"><a target="_blank" rel="noopener noreferrer" href="https://team.isc-ejpd.admin.ch/confluence/display/~isc-hoa">Hofstetter André ISC-EJPD</a>&nbsp;</p>
+                </td>
+                <td style="border:1px solid rgb(193, 199, 208);padding:7px 10px;vertical-align:top;">
+                    <p style="margin-left:0px;">vm01 / kurs01</p>
+                </td>
+            </tr>
+            <tr>
+                <td style="border:1px solid rgb(193, 199, 208);padding:7px 10px;vertical-align:top;">
+                    <p style="margin-left:0px;">2</p>
+                </td>
+                <td style="border:1px solid rgb(193, 199, 208);padding:7px 10px;vertical-align:top;">
+                    <p style="margin-left:0px;"><a target="_blank" rel="noopener noreferrer" href="https://team.isc-ejpd.admin.ch/confluence/display/~isc-gbr">Gabor Marius ISC-EJPD</a>&nbsp;</p>
+                </td>
+                <td style="border:1px solid rgb(193, 199, 208);padding:7px 10px;vertical-align:top;">
+                    <p style="margin-left:0px;">vm02 / kurs02</p>
+                </td>
+            </tr>
+            <tr>
+                <td style="border:1px solid rgb(193, 199, 208);padding:7px 10px;vertical-align:top;">
+                    <p style="margin-left:0px;">3</p>
+                </td>
+                <td style="border:1px solid rgb(193, 199, 208);padding:7px 10px;vertical-align:top;">
+                    <p style="margin-left:0px;"><a target="_blank" rel="noopener noreferrer" href="https://team.isc-ejpd.admin.ch/confluence/display/~isc-hai">Hagi Ivan ISC-EJPD</a>&nbsp;</p>
+                </td>
+                <td style="border:1px solid rgb(193, 199, 208);padding:7px 10px;vertical-align:top;">
+                    <p style="margin-left:0px;">vm03 / kurs03</p>
+                </td>
+            </tr>
+            <tr>
+                <td style="border:1px solid rgb(193, 199, 208);padding:7px 10px;vertical-align:top;">
+                    <p style="margin-left:0px;">4</p>
+                </td>
+                <td style="border:1px solid rgb(193, 199, 208);padding:7px 10px;vertical-align:top;">
+                    <p style="margin-left:0px;"><a target="_blank" rel="noopener noreferrer" href="https://team.isc-ejpd.admin.ch/confluence/display/~isc-ksa">Krebs Samuel ISC-EJPD</a>&nbsp;</p>
+                </td>
+                <td style="border:1px solid rgb(193, 199, 208);padding:7px 10px;vertical-align:top;">
+                    <p style="margin-left:0px;">vm04 / kurs04</p>
+                </td>
+            </tr>
+            <tr>
+                <td style="border:1px solid rgb(193, 199, 208);padding:7px 10px;vertical-align:top;">
+                    <p style="margin-left:0px;">5</p>
+                </td>
+                <td style="border:1px solid rgb(193, 199, 208);padding:7px 10px;vertical-align:top;">
+                    <p style="margin-left:0px;"><a target="_blank" rel="noopener noreferrer" href="https://team.isc-ejpd.admin.ch/confluence/display/~isc-frf">Frühwirth Franz ISC-EJPD</a>&nbsp;</p>
+                </td>
+                <td style="border:1px solid rgb(193, 199, 208);padding:7px 10px;vertical-align:top;">
+                    <p style="margin-left:0px;">vm05 / kurs05</p>
+                </td>
+            </tr>
+            <tr>
+                <td style="border:1px solid rgb(193, 199, 208);padding:7px 10px;vertical-align:top;">
+                    <p style="margin-left:0px;">6</p>
+                </td>
+                <td style="border:1px solid rgb(193, 199, 208);padding:7px 10px;vertical-align:top;">
+                    <p style="margin-left:0px;"><a target="_blank" rel="noopener noreferrer" href="https://team.isc-ejpd.admin.ch/confluence/display/~isc-rae">Raemy Stéphane ISC-EJPD</a>&nbsp;</p>
+                </td>
+                <td style="border:1px solid rgb(193, 199, 208);padding:7px 10px;vertical-align:top;">
+                    <p style="margin-left:0px;">vm06 / kurs06</p>
+                </td>
+            </tr>
+            <tr>
+                <td style="border:1px solid rgb(193, 199, 208);padding:7px 10px;vertical-align:top;">
+                    <p style="margin-left:0px;">7</p>
+                </td>
+                <td style="border:1px solid rgb(193, 199, 208);padding:7px 10px;vertical-align:top;">
+                    <p style="margin-left:0px;"><a target="_blank" rel="noopener noreferrer" href="https://team.isc-ejpd.admin.ch/confluence/display/~bj-ser">Semprevivo Rodolfo BJ</a>&nbsp;</p>
+                </td>
+                <td style="border:1px solid rgb(193, 199, 208);padding:7px 10px;vertical-align:top;">
+                    <p style="margin-left:0px;">vm07 / kurs07</p>
+                </td>
+            </tr>
+            <tr>
+                <td style="border:1px solid rgb(193, 199, 208);padding:7px 10px;vertical-align:top;">
+                    <p style="margin-left:0px;">8</p>
+                </td>
+                <td style="border:1px solid rgb(193, 199, 208);padding:7px 10px;vertical-align:top;">
+                    <p style="margin-left:0px;"><a target="_blank" rel="noopener noreferrer" href="https://team.isc-ejpd.admin.ch/confluence/display/~bj-oan">Oehler Andrea BJ</a>&nbsp;</p>
+                </td>
+                <td style="border:1px solid rgb(193, 199, 208);padding:7px 10px;vertical-align:top;">
+                    <p style="margin-left:0px;">vm08 / kurs08</p>
+                </td>
+            </tr>
+            <tr>
+                <td style="border:1px solid rgb(193, 199, 208);padding:7px 10px;vertical-align:top;">
+                    <p style="margin-left:0px;">9</p>
+                </td>
+                <td style="border:1px solid rgb(193, 199, 208);padding:7px 10px;vertical-align:top;">
+                    <p style="margin-left:0px;"><a target="_blank" rel="noopener noreferrer" href="https://team.isc-ejpd.admin.ch/confluence/display/~isc-sei">Seabra Isana ISC-EJPD</a>&nbsp;</p>
+                </td>
+                <td style="border:1px solid rgb(193, 199, 208);padding:7px 10px;vertical-align:top;">
+                    <p style="margin-left:0px;">vm09 / kurs09</p>
+                </td>
+            </tr>
+            <tr>
+                <td style="border:1px solid rgb(193, 199, 208);padding:7px 10px;vertical-align:top;">
+                    <p style="margin-left:0px;">10</p>
+                </td>
+                <td style="border:1px solid rgb(193, 199, 208);padding:7px 10px;vertical-align:top;">
+                    <p style="margin-left:0px;"><a target="_blank" rel="noopener noreferrer" href="https://team.isc-ejpd.admin.ch/confluence/display/~isc-kro">Kaufmann Roger ISC-EJPD</a>&nbsp;</p>
+                </td>
+                <td style="border:1px solid rgb(193, 199, 208);padding:7px 10px;vertical-align:top;">
+                    <p style="margin-left:0px;">vm10 / kurs10</p>
+                </td>
+            </tr>
+            <tr>
+                <td style="border:1px solid rgb(193, 199, 208);padding:7px 10px;vertical-align:top;">
+                    <p style="margin-left:0px;">11</p>
+                </td>
+                <td style="border:1px solid rgb(193, 199, 208);padding:7px 10px;vertical-align:top;">
+                    <p style="margin-left:0px;"><a target="_blank" rel="noopener noreferrer" href="https://team.isc-ejpd.admin.ch/confluence/display/~isc-faj">Fawer Jean-Yves ISC-EJPD</a></p>
+                </td>
+                <td style="border:1px solid rgb(193, 199, 208);padding:7px 10px;vertical-align:top;">
+                    <p style="margin-left:0px;">vm11 / kurs11</p>
+                </td>
+            </tr>
+            <tr>
+                <td style="border:1px solid rgb(193, 199, 208);padding:7px 10px;vertical-align:top;">
+                    <p style="margin-left:0px;">&nbsp;</p>
+                </td>
+                <td style="border:1px solid rgb(193, 199, 208);padding:7px 10px;vertical-align:top;">
+                    <p style="margin-left:0px;">&nbsp;<a target="_blank" rel="noopener noreferrer" href="https://team.isc-ejpd.admin.ch/confluence/display/~isc-wen">Wenger Andreas ISC</a> (Trainer)</p>
+                </td>
+                <td style="border:1px solid rgb(193, 199, 208);padding:7px 10px;vertical-align:top;">
+                    <p style="margin-left:0px;">vm12 / kurs12</p>
+                </td>
+            </tr>
+        </tbody>
+    </table>
+</figure>
+<p style="margin-left:0px;">&nbsp;</p>
+<p><br>&nbsp;</p>
+</body>
+
+</html>

@@ -3,30 +3,65 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Elasticsearch Devops Kurs</title>
+    <title>Elastic DevOps Kurs</title>
     <style>
+        :root {
+            --primary-color: #1a73e8;
+            --secondary-color: #f1f3f4;
+            --text-color: #202124;
+            --link-color: #1967d2;
+        }
         body {
-            font-family: Arial, sans-serif;
-            margin: 0;
-            padding: 0;
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            line-height: 1.6;
+            color: var(--text-color);
+            max-width: 1200px;
+            margin: 0 auto;
+            padding: 20px;
         }
-        .menu-bar {
-            background-color: #333;
-            overflow: hidden;
+        h1, h2, h3 {
+            color: var(--primary-color);
         }
-        .menu-bar a {
-            float: left;
-            color: white;
-            text-align: center;
-            padding: 14px 16px;
+        a {
+            color: var(--link-color);
             text-decoration: none;
         }
-        .menu-bar a:hover {
-            background-color: CornflowerBlue;
-            color: CornflowerBlue;
+        a:hover {
+            text-decoration: underline;
         }
-        .content {
-            padding: 20px;
+        .menu-bar {
+            background-color: var(--secondary-color);
+            padding: 10px;
+            margin-bottom: 20px;
+            border-radius: 5px;
+        }
+        .menu-bar a {
+            margin-right: 15px;
+        }
+        table {
+            width: 100%;
+            border-collapse: collapse;
+            margin-bottom: 20px;
+        }
+        th, td {
+            border: 1px solid #ddd;
+            padding: 12px;
+            text-align: left;
+        }
+        th {
+            background-color: var(--secondary-color);
+            font-weight: bold;
+        }
+        tr:nth-child(even) {
+            background-color: #f8f9fa;
+        }
+        @media (max-width: 768px) {
+            body {
+                padding: 10px;
+            }
+            table {
+                font-size: 14px;
+            }
         }
     </style>
 </head>
@@ -35,42 +70,34 @@
         <a href="#home">Home</a>
         <a href="/elastic_training.pdf">Labs</a>
         <a href="/Elastic_training_labs.pdf">Slides</a>
-        
     </div>
-<h1 style="margin-left:40px;">&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; Elastic DevOps Kurs&nbsp;</h1>
-<h1 style="margin-left:40px;">Generelle Info zu den Kursen</h1>
-<p style="margin-left:40px;">Die Kursen finden alle vor Ort am Eichenweg 3 im Sitzungszimmer 1.316 statt.&nbsp;<br>In den Kursen werden auch Übungen durchgeführt. Damit die Übungen gemacht werden können muss jeder Teilnehmer sein <strong>privates Notebook</strong> dabei haben.<br>Diese Dokument ist schreibgeschützt und kann nur durch: <a target="_blank" rel="noopener noreferrer" href="https://team.isc-ejpd.admin.ch/confluence/display/~isc-ssl">Sahlender Stefan ISC-EJPD</a> und <a target="_blank" rel="noopener noreferrer" href="https://team.isc-ejpd.admin.ch/confluence/display/~isc-fua">Fuhrer Alain ISC-EJPD</a> bearbeitet werden</p>
-<h1 style="margin-left:40px;">Schulungspaket DevOps (2x2 Tage)&nbsp;</h1>
-<p style="margin-left:40px;">Die DevOps Schulung ist die welche am tiefsten in die Thematik Elasticsearch eintaucht und Wissen vermittelt welches zum Betrieb einer Elastic Infrastruktur benötigt wird. Dieser Kurs ist grundsätzlich für Mitarbeiter aus B&amp;S vorgesehen welche sich Intensiv mit&nbsp;<br>dem Betrieb von Elastic Search Infrastrukturen beschäftigen. Damit dieser Kurs den vollen Mehrwert entfalten kann, wird ein gewisses Basiswissen über Elasticsearch vorausgesetzt.&nbsp;</p>
-<h2 style="margin-left:40px;">Kurs Inhalt</h2>
-<p style="margin-left:40px;">Detaillierte Schulung zu den Themen</p>
-<ul style="list-style-type:disc;">
-    <li>
-        <p style="margin-left:0px;">Elastic Search</p>
-    </li>
-    <li>
-        <p style="margin-left:0px;">Kibana (Fokus liegt auf Deployment und Betrieb von Kibana)&nbsp;</p>
-    </li>
-    <li>
-        <p style="margin-left:0px;">Stack Features</p>
-    </li>
-    <li>
-        <p style="margin-left:0px;">Logstash</p>
-    </li>
-    <li>
-        <p style="margin-left:0px;">Beats / Agent / Fleet</p>
-    </li>
-</ul>
 
-<br>
-    <h2 style="margin-left:40px;">Links zum Kurs Material</h2>
-<br>
-    <a style=margin-left:40px href=/Elastic_training_labs.docx> Elastic_training_labs.docx</a>
-<br>
-<a style=margin-left:40px href=/elastic_training.pdf>alastic_training.pdf</a>
-<br>
-    <a style=margin-left:40px href=/elasticlogs.csv>elasticlogs.csv</a>
-    <br>
+    <h1>Elastic DevOps Kurs</h1>
+
+    <h2>Generelle Info zu den Kursen</h2>
+    <p>Die Kursen finden alle vor Ort am Eichenweg 3 im Sitzungszimmer 1.316 statt.</p>
+    <p>In den Kursen werden auch Übungen durchgeführt. Damit die Übungen gemacht werden können muss jeder Teilnehmer sein <strong>privates Notebook</strong> dabei haben.</p>
+    <p>Diese Dokument ist schreibgeschützt und kann nur durch: <a href="https://team.isc-ejpd.admin.ch/confluence/display/~isc-ssl" target="_blank" rel="noopener noreferrer">Sahlender Stefan ISC-EJPD</a> und <a href="https://team.isc-ejpd.admin.ch/confluence/display/~isc-fua" target="_blank" rel="noopener noreferrer">Fuhrer Alain ISC-EJPD</a> bearbeitet werden</p>
+
+    <h2>Schulungspaket DevOps (2x2 Tage)</h2>
+    <p>Die DevOps Schulung ist die welche am tiefsten in die Thematik Elasticsearch eintaucht und Wissen vermittelt welches zum Betrieb einer Elastic Infrastruktur benötigt wird. Dieser Kurs ist grundsätzlich für Mitarbeiter aus B&S vorgesehen welche sich Intensiv mit dem Betrieb von Elastic Search Infrastrukturen beschäftigen. Damit dieser Kurs den vollen Mehrwert entfalten kann, wird ein gewisses Basiswissen über Elasticsearch vorausgesetzt.</p>
+
+    <h3>Kurs Inhalt</h3>
+    <p>Detaillierte Schulung zu den Themen</p>
+    <ul>
+        <li>Elastic Search</li>
+        <li>Kibana (Fokus liegt auf Deployment und Betrieb von Kibana)</li>
+        <li>Stack Features</li>
+        <li>Logstash</li>
+        <li>Beats / Agent / Fleet</li>
+    </ul>
+
+    <h3>Links zum Kurs Material</h3>
+    <ul>
+        <li><a href="/Elastic_training_labs.docx">Elastic_training_labs.docx</a></li>
+        <li><a href="/elastic_training.pdf">elastic_training.pdf</a></li>
+        <li><a href="/elasticlogs.csv">elasticlogs.csv</a></li>
+    </ul>
     
 
 

@@ -1,0 +1,310 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Elastic DevOps Kurs</title>
+    <link href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@300;400;600&display=swap" rel="stylesheet">
+    <style>
+        :root {
+            --primary-color: #0077cc;
+            --secondary-color: #f0f7ff;
+            --text-color: #333;
+            --link-color: #0077cc;
+            --border-color: #e0e0e0;
+        }
+        
+        body {
+            font-family: 'Open Sans', Arial, sans-serif;
+            line-height: 1.6;
+            color: var(--text-color);
+            margin: 0;
+            padding: 0;
+            background-color: #f9f9f9;
+        }
+        
+        .container {
+            max-width: 1200px;
+            margin: 0 auto;
+            padding: 0 20px;
+        }
+        
+        .header {
+            background-color: white;
+            box-shadow: 0 2px 4px rgba(0,0,0,0.1);
+            position: sticky;
+            top: 0;
+            z-index: 1000;
+        }
+        
+        .menu-bar {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            padding: 15px 0;
+        }
+        
+        .logo {
+            font-size: 24px;
+            font-weight: 600;
+            color: var(--primary-color);
+        }
+        
+        .menu-bar nav a {
+            color: var(--text-color);
+            text-decoration: none;
+            padding: 5px 15px;
+            font-weight: 600;
+            transition: color 0.3s ease;
+        }
+        
+        .menu-bar nav a:hover {
+            color: var(--primary-color);
+        }
+        
+        h1, h2, h3 {
+            color: var(--primary-color);
+            margin-top: 40px;
+        }
+        
+        h1 {
+            font-size: 36px;
+            border-bottom: 2px solid var(--primary-color);
+            padding-bottom: 10px;
+        }
+        
+        h2 {
+            font-size: 28px;
+        }
+        
+        h3 {
+            font-size: 22px;
+        }
+        
+        a {
+            color: var(--link-color);
+            text-decoration: none;
+            transition: color 0.3s ease;
+        }
+        
+        a:hover {
+            color: #005fa3;
+        }
+        
+        .course-info {
+            background-color: var(--secondary-color);
+            border-radius: 8px;
+            padding: 30px;
+            margin: 30px 0;
+            box-shadow: 0 4px 6px rgba(0,0,0,0.1);
+        }
+        
+        .course-content {
+            background-color: white;
+            border-radius: 8px;
+            padding: 30px;
+            margin: 30px 0;
+            box-shadow: 0 4px 6px rgba(0,0,0,0.1);
+        }
+        
+        ul {
+            padding-left: 20px;
+        }
+        
+        .participant-table {
+            width: 100%;
+            border-collapse: separate;
+            border-spacing: 0;
+            margin-top: 20px;
+            background-color: white;
+            border-radius: 8px;
+            overflow: hidden;
+            box-shadow: 0 4px 6px rgba(0,0,0,0.1);
+        }
+        
+        .participant-table th, .participant-table td {
+            padding: 12px 15px;
+            text-align: left;
+        }
+        
+        .participant-table th {
+            background-color: var(--primary-color);
+            color: white;
+            font-weight: 600;
+            text-transform: uppercase;
+            font-size: 14px;
+        }
+        
+        .participant-table tr:nth-child(even) {
+            background-color: #f8f8f8;
+        }
+        
+        .participant-table tr:hover {
+            background-color: #f0f0f0;
+        }
+        
+        @media (max-width: 768px) {
+            .container {
+                padding: 0 15px;
+            }
+            
+            .menu-bar {
+                flex-direction: column;
+                align-items: flex-start;
+            }
+            
+            .menu-bar nav {
+                margin-top: 10px;
+            }
+            
+            .menu-bar nav a {
+                display: inline-block;
+                margin: 5px 0;
+            }
+            
+            .participant-table {
+                font-size: 14px;
+            }
+        }
+    </style>
+</head>
+<body>
+    <header class="header">
+        <div class="container">
+            <div class="menu-bar">
+                <div class="logo">Elastic DevOps</div>
+                <nav>
+                    <a href="#home">Home</a>
+                    <a href="/elastic_training.pdf">Labs</a>
+                    <a href="/Elastic_training_labs.pdf">Slides</a>
+                </nav>
+            </div>
+        </div>
+    </header>
+
+    <main class="container">
+        <h1>Elastic DevOps Kurs</h1>
+
+        <section class="course-info">
+            <h2>Generelle Info zu den Kursen</h2>
+            <p>Die Kursen finden alle vor Ort am Eichenweg 3 im Sitzungszimmer 1.316 statt.</p>
+            <p>In den Kursen werden auch Übungen durchgeführt. Damit die Übungen gemacht werden können muss jeder Teilnehmer sein <strong>privates Notebook</strong> dabei haben.</p>
+            <p>Diese Dokument ist schreibgeschützt und kann nur durch: <a href="https://team.isc-ejpd.admin.ch/confluence/display/~isc-ssl" target="_blank" rel="noopener noreferrer">Sahlender Stefan ISC-EJPD</a> und <a href="https://team.isc-ejpd.admin.ch/confluence/display/~isc-fua" target="_blank" rel="noopener noreferrer">Fuhrer Alain ISC-EJPD</a> bearbeitet werden</p>
+        </section>
+
+        <section class="course-content">
+            <h2>Schulungspaket DevOps (2x2 Tage)</h2>
+            <p>Die DevOps Schulung ist die welche am tiefsten in die Thematik Elasticsearch eintaucht und Wissen vermittelt welches zum Betrieb einer Elastic Infrastruktur benötigt wird. Dieser Kurs ist grundsätzlich für Mitarbeiter aus B&S vorgesehen welche sich Intensiv mit dem Betrieb von Elastic Search Infrastrukturen beschäftigen. Damit dieser Kurs den vollen Mehrwert entfalten kann, wird ein gewisses Basiswissen über Elasticsearch vorausgesetzt.</p>
+            
+            <h3>Kurs Inhalt</h3>
+            <ul>
+                <li>Elastic Search</li>
+                <li>Kibana (Fokus liegt auf Deployment und Betrieb von Kibana)</li>
+                <li>Stack Features</li>
+                <li>Logstash</li>
+                <li>Beats / Agent / Fleet</li>
+            </ul>
+            
+            <h3>Links zum Kurs Material</h3>
+            <ul>
+                <li><a href="/Elastic_training_labs.docx">Elastic_training_labs.docx</a></li>
+                <li><a href="/elastic_training.pdf">elastic_training.pdf</a></li>
+                <li><a href="/elasticlogs.csv">elasticlogs.csv</a></li>
+            </ul>
+        </section>
+
+        <section class="course-content">
+            <h2>Schulungspaket für Architekten (1 Tag)</h2>
+            <p>Dieses Schulungspaket wurde so aufgebaut, dass in einem Tag eine gute Übersicht über die Produkte von Elasticsearch gegeben wird. Es wird auch eingegangen darauf wie der Elasticsearch Service des ISC aufgebaut ist und wie er am Besten in Anwendungen implementiert wird.</p>
+            <p>Dieser Kurs ist für Architekten gedacht, damit diese in Zukunft in Projekten ein gutes Vorwissen haben wie Elasticsearch am Besten in Anwendungen integriert werden kann.</p>
+            
+            <h3>Kurs Inhalt</h3>
+            <ul>
+                <li>Elastic Stack</li>
+                <li>Elastic Cloud Enterprise</li>
+                <li>Elastic Cloud Services</li>
+                <li>Elastic Cloud Kubernetes</li>
+                <li>Funktionsübersicht Elastic Stack und ESS Service im ISC</li>
+            </ul>
+            
+            <h3>Kursdatum 16.09.2024</h3>
+            <p>Kurszeiten:</p>
+            <ul>
+                <li>09:00 - 12:30</li>
+                <li>13:30 - 16:00</li>
+            </ul>
+            
+            <table class="participant-table">
+                <thead>
+                    <tr>
+                        <th>Nummer</th>
+                        <th>Teilnehmer</th>
+                        <th>VM / User</th>
+                        <th>Kibana Link</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td>1</td>
+                        <td><a href="https://team.isc-ejpd.admin.ch/confluence/display/~isc-gbr" target="_blank" rel="noopener noreferrer">Gabor Marius ISC-EJPD</a></td>
+                        <td>vm01 / kurs01</td>
+                        <td><a target="_blank"  href="https://kibana01.abchmast.org">Kibana01</a></td>
+                    </tr>
+                    <tr>
+                        <td>2</td>
+                        <td><a href="https://team.isc-ejpd.admin.ch/confluence/display/~isc-hoa" target="_blank" rel="noopener noreferrer">Hofstetter André ISC-EJPD</a></td>
+                        <td>vm02 / kurs02</td>
+                        <td><a target="_blank"  href="https://kibana02.abchmast.org">Kibana02</a></td>
+                    </tr>
+                    <tr>
+                        <td>3</td>
+                        <td><a href="https://team.isc-ejpd.admin.ch/confluence/display/~isc-sap" target="_blank" rel="noopener noreferrer">Sandmeier Patrick ISC-EJPD</a></td>
+                        <td>vm03 / kurs03</td>
+                        <td><a target="_blank"  href="https://kibana03.abchmast.org">Kibana03</a></td>
+                    </tr>
+                    <tr>
+                        <td>4</td>
+                        <td><a href="https://team.isc-ejpd.admin.ch/confluence/display/~isc-hav" target="_blank" rel="noopener noreferrer">Hagi Ivan ISC-EJPD</a></td>
+                        <td>vm04 / kurs04</td>
+                        <td><a target="_blank"  href="https://kibana04.abchmast.org">Kibana04</a></td>
+                    </tr>
+                    <tr>
+                        <td>5</td>
+                        <td><a href="https://team.isc-ejpd.admin.ch/confluence/display/~isc-arv" target="_blank" rel="noopener noreferrer">Vedrine Arnaud ISC-EJPD</a></td>
+                        <td>vm05 / kurs05</td>
+                        <td><a target="_blank"  href="https://kibana05.abchmast.org">Kibana05</a></td>
+                    </tr>
+                    <tr>
+                        <td>6</td>
+                        <td><a href="https://team.isc-ejpd.admin.ch/confluence/display/~isc-frf" target="_blank" rel="noopener noreferrer">Frühwirth Franz ISC-EJPD</a></td>
+                        <td>vm06 / kurs06</td>
+                        <td><a target="_blank"  href="https://kibana06.abchmast.org">Kibana06</a></td>
+                    </tr>
+                    <tr>
+                        <td>7</td>
+                        <td><a href="https://team.isc-ejpd.admin.ch/confluence/display/~isc-ssa" target="_blank" rel="noopener noreferrer">Sommer Sacha ISC-EJPD</a></td>
+                        <td>vm07 / kurs07</td>
+                        <td><a target="_blank"  href="https://kibana07.abchmast.org">Kibana07</a></td>
+                    </tr>
+                    <tr>
+                        <td>8</td>
+                        <td><a href="https://team.isc-ejpd.admin.ch/confluence/display/~isc-han" target="_blank" rel="noopener noreferrer">Hutmacher Niklaus ISC-EJPD (Nur Unterlagen, kein Kurs wegen Ferien)</a></td>
+                        <td>vm08 / kurs02</td>
+                        <td><a target="_blank"  href="https://kibana08.abchmast.org">Kibana08</a></td>
+                    </tr>
+                    <tr>
+                        <td></td>
+                        <td><a href="https://team.isc-ejpd.admin.ch/confluence/display/~isc-wen" target="_blank" rel="noopener noreferrer">Wenger Andreas ISC (Trainer)</a></td>
+                        <td>vm12 / kurs12</td>
+                        <td><a target="_blank"  href="https://kibana12.abchmast.org">Kibana12</a></td>
+                    </tr>
+                    <!-- Add more rows for other participants -->
+                </tbody>
+            </table>
+        </section>
+
+        <!-- Add more sections for other course packages -->
+
+    </main>
+</body>
+</html>
